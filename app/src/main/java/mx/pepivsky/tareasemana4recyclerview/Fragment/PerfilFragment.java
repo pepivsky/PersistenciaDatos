@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 
 import mx.pepivsky.tareasemana4recyclerview.Adapter.MascotaAdaptador;
-import mx.pepivsky.tareasemana4recyclerview.Pojo.Mascota;
+import mx.pepivsky.tareasemana4recyclerview.model.Mascota;
 import mx.pepivsky.tareasemana4recyclerview.R;
 
 /**
@@ -39,9 +39,9 @@ public class PerfilFragment extends Fragment {
         mascotaperfil = new ArrayList<Mascota>();
         //llenado de la lista
 
-        mascotaperfil.add(new Mascota(R.drawable.guacamayo,"Juancho"));
-        mascotaperfil.add(new Mascota(R.drawable.guacamayo_rojo,"Juancho"));
-        mascotaperfil.add(new Mascota(R.drawable.guacamayo2,"Juancho"));
+        mascotaperfil.add(new Mascota(R.drawable.guacamayo,"Juancho", 2));
+        mascotaperfil.add(new Mascota(R.drawable.guacamayo_rojo,"Juancho", 5));
+        mascotaperfil.add(new Mascota(R.drawable.guacamayo2,"Juancho", 2));
 
     }
 

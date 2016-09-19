@@ -6,22 +6,21 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
 import java.util.ArrayList;
 
-import mx.pepivsky.tareasemana4recyclerview.Adapter.MascotaAdaptador;
 import mx.pepivsky.tareasemana4recyclerview.Adapter.PageAdapter;
 import mx.pepivsky.tareasemana4recyclerview.Fragment.PerfilFragment;
 import mx.pepivsky.tareasemana4recyclerview.Fragment.RecyclerViewFragment;
-import mx.pepivsky.tareasemana4recyclerview.Pojo.Mascota;
 
 public class MainActivity extends AppCompatActivity {
+//Hola
+    private static final String KEY_EXTRA_NAME = "name";
     private Toolbar toolbar;
     private TabLayout tabLayout;
     private ViewPager viewPager;
@@ -36,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.miActionBar);
         tabLayout =(TabLayout)findViewById(R.id.tabLaoyout);
         viewPager =(ViewPager)findViewById(R.id.viewPager);
+        Log.e("MainActivity", "onCreate");
         setUpViewPager();
 
         if (toolbar != null){
@@ -73,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
     private ArrayList<Fragment> agregarFragments(){
+        Log.e("MainActivity", "agregarFragments");
         ArrayList<Fragment> fragments = new ArrayList<>();
 
         fragments.add(new RecyclerViewFragment());

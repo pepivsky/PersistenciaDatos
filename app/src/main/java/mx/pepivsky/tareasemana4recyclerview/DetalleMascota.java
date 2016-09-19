@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import java.util.ArrayList;
 
 import mx.pepivsky.tareasemana4recyclerview.Adapter.MascotaAdaptador;
-import mx.pepivsky.tareasemana4recyclerview.Pojo.Mascota;
+import mx.pepivsky.tareasemana4recyclerview.model.Mascota;
 
 public class DetalleMascota extends AppCompatActivity {
 ImageView imgRaiting;
@@ -28,11 +28,11 @@ ImageView imgRaiting;
         mascotas = new ArrayList<Mascota>();
         //llenado de la lista
 
-        mascotas.add(new Mascota(R.drawable.aves_exoticas_del_amazonas_y_del_mundo,"Juancho"));
-        mascotas.add(new Mascota(R.drawable.perro_carlino_485x300,"Firulais"));
-        mascotas.add(new Mascota(R.drawable.descarga,"Manchas"));
-        mascotas.add(new Mascota(R.drawable.oveja,"Dolly"));
-        mascotas.add(new Mascota(R.drawable.images,"Ernestin"));
+        mascotas.add(new Mascota(R.drawable.aves_exoticas_del_amazonas_y_del_mundo,"Juancho", 7));
+        mascotas.add(new Mascota(R.drawable.perro_carlino_485x300,"Firulais",5));
+        mascotas.add(new Mascota(R.drawable.descarga,"Manchas", 2));
+        mascotas.add(new Mascota(R.drawable.oveja,"Dolly", 6));
+        mascotas.add(new Mascota(R.drawable.images,"Ernestin", 1));
 
 
         RecyclerView recyclerView = (RecyclerView)findViewById(R.id.rvRanking);

@@ -10,4 +10,11 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="MiBotonRaised" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="android:colorActivatedHighlight">@color/colorBlanco</item>
+        <item name="android:textColor">@color/colorBlanco</item>
+
+    </style>
+
 </resources>
